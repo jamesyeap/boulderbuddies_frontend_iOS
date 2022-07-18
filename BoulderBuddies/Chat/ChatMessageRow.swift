@@ -11,22 +11,21 @@ struct ChatMessageRow: View {
     var message: ChatMessage
     
     var body: some View {
-        VStack {
-            HStack {
-                VStack {
-                    Text(message.text)
-                        .font(.body)
-                }
+        VStack(alignment: .leading) {
+            HStack() {
+                Text(message.text)
+                    .font(.body)
             }
-            .padding(.horizontal, 16)
-            
-            Divider().padding(.leading, 16)
         }
+        .padding()
+        .frame(width: UIScreen.main.bounds.size.width * 0.8)
+        .fixedSize(horizontal: true, vertical: false)
     }
 }
 
 struct ChatMessageRow_Previews: PreviewProvider {
     static var previews: some View {
-        ChatMessageRow(message: ChatMessage(text: "Example chat message."))
+        ChatMessageRow(message: ChatMessage(text: "Example chaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat message."))
+            .previewLayout(.sizeThatFits)
     }
 }
