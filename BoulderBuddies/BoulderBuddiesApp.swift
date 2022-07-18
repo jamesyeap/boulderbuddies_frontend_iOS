@@ -11,7 +11,8 @@ import SwiftUI
 struct BoulderBuddiesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            ChatView()
         }
     }
 }

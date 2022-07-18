@@ -11,6 +11,10 @@
 		E32D2FF0288426E400BC508E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D2FEF288426E400BC508E /* ContentView.swift */; };
 		E32D2FF2288426E900BC508E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32D2FF1288426E900BC508E /* Assets.xcassets */; };
 		E32D2FF5288426E900BC508E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32D2FF4288426E900BC508E /* Preview Assets.xcassets */; };
+		E32E2A262885013300F15B3B /* WebSocketStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E2A252885013300F15B3B /* WebSocketStream.swift */; };
+		E32E2A282885018500F15B3B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E2A272885018500F15B3B /* ChatView.swift */; };
+		E32E2A2E2885068300F15B3B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E2A2D2885068300F15B3B /* Models.swift */; };
+		E32E2A3028850AFD00F15B3B /* ChatMessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E2A2F28850AFD00F15B3B /* ChatMessageRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		E32D2FEF288426E400BC508E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E32D2FF1288426E900BC508E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32D2FF4288426E900BC508E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E32E2A252885013300F15B3B /* WebSocketStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketStream.swift; sourceTree = "<group>"; };
+		E32E2A272885018500F15B3B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		E32E2A2D2885068300F15B3B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E32E2A2F28850AFD00F15B3B /* ChatMessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 		E32D2FEC288426E400BC508E /* BoulderBuddies */ = {
 			isa = PBXGroup;
 			children = (
+				E32E2A242885011700F15B3B /* Chat */,
 				E32D2FED288426E400BC508E /* BoulderBuddiesApp.swift */,
 				E32D2FEF288426E400BC508E /* ContentView.swift */,
 				E32D2FF1288426E900BC508E /* Assets.xcassets */,
@@ -65,6 +74,17 @@
 				E32D2FF4288426E900BC508E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E32E2A242885011700F15B3B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E32E2A252885013300F15B3B /* WebSocketStream.swift */,
+				E32E2A272885018500F15B3B /* ChatView.swift */,
+				E32E2A2D2885068300F15B3B /* Models.swift */,
+				E32E2A2F28850AFD00F15B3B /* ChatMessageRow.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32E2A3028850AFD00F15B3B /* ChatMessageRow.swift in Sources */,
+				E32E2A282885018500F15B3B /* ChatView.swift in Sources */,
 				E32D2FF0288426E400BC508E /* ContentView.swift in Sources */,
+				E32E2A262885013300F15B3B /* WebSocketStream.swift in Sources */,
 				E32D2FEE288426E400BC508E /* BoulderBuddiesApp.swift in Sources */,
+				E32E2A2E2885068300F15B3B /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
